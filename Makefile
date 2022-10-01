@@ -14,6 +14,6 @@ build:
 	echo "export function getUint8Memory0(): Uint8Array;" >> pkg/wasm_game_of_life.d.ts
 
 run:
-	deno run --reload --allow-read=pkg/wasm_game_of_life_bg.wasm index.ts
+	deno run --unstable --reload --allow-read=pkg/wasm_game_of_life_bg.wasm index.ts
 
 .PHONY: clean fmt build run
